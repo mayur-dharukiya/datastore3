@@ -1,4 +1,4 @@
-package com.revature.datastorev3.ui.ui
+package com.revature.datastorev3.ui
 
 import android.content.Context
 import androidx.datastore.core.DataStore
