@@ -11,6 +11,10 @@
         android:theme="@style/Theme.Datastore3">
 
         <activity
+            android:name=".Brandon_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
             android:name=".Adama_MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
