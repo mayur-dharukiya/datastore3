@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">datastore3</string>
-    <string name="title_activity_peter_main2">Peter_MainActivity2</string>
-    <string name="title_activity_peter_main">Peter_MainActivity</string>
-    <string name="title_activity_tyler_main">Tyler_MainActivity</string>
-</resources>
+
+    <string name="title_activity_lyle_main2">Lyle_MainActivity2</string>
