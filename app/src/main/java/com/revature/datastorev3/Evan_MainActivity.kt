@@ -16,7 +16,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.revature.datastorev3.ui.Mayur_StoreUserEmail
 import com.revature.datastorev3.ui.theme.Datastore3Theme
 import kotlinx.coroutines.launch
 
@@ -43,7 +42,7 @@ fun LoginScreen_EVAN() {
 
     val scope= rememberCoroutineScope()
 
-    val dataStore= Mayur_StoreUserEmail(context)
+    val dataStore = Evan_StoreUserEmail(context)
 
     Column(modifier = Modifier.wrapContentSize()) {
         var email by rememberSaveable { mutableStateOf("") }
@@ -81,10 +80,10 @@ fun LoginScreen_EVAN() {
         )
         //email field
         TextField(
-            value = email,
-            onValueChange = { email = it },
+            value = password,
+            onValueChange = { password = it },
             keyboardOptions = KeyboardOptions.Default.copy(
-                keyboardType = KeyboardType.Email
+                keyboardType = KeyboardType.Password
             ),
             modifier = Modifier
                 .padding(16.dp, 0.dp, 16.dp, 0.dp)
@@ -96,6 +95,7 @@ fun LoginScreen_EVAN() {
                 //launch the class in a coroutine scope
                 scope.launch {
                     dataStore.saveEmail(email)
+                    dataStore.savePassword(password)
                 }
                       },
             modifier = Modifier
@@ -106,13 +106,15 @@ fun LoginScreen_EVAN() {
             Text(
                 style = MaterialTheme.typography.subtitle1,
                 color = Color.White,
-                text = "Save Email",
+                text = "Save Email and Password",
             )
         }
         Spacer(modifier = Modifier.height(32.dp))
 
         val userEmail = dataStore.getEmail.collectAsState(initial = "")
+        val userPassword = dataStore.getPassword.collectAsState(initial = "")
 
         Text(text = userEmail.value!!)
+        Text(text = userPassword.value!!)
     }
 }
