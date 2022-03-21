@@ -45,7 +45,7 @@ fun LoginScreen_RICHARD()
 
     val scope= rememberCoroutineScope()
 
-    val dataStore= Mayur_StoreUserEmail(context)
+    val dataStore= Richard_StoreUserEmail(context)
 
     Column(modifier = Modifier.wrapContentSize()) {
         var email by rememberSaveable { mutableStateOf("") }

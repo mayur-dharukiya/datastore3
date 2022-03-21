@@ -47,7 +47,9 @@ fun LoginScreen_Ryan(){
     val dataStore = Ryan_StoreUserEmail(context)
 
     Column(modifier = Modifier.wrapContentSize()) {
+        var readEmail = dataStore.getEmail.collectAsState(initial = "").value
         var email by rememberSaveable { mutableStateOf("") }
+        email = readEmail!!
         //
         Text(
             modifier = Modifier
@@ -73,11 +75,42 @@ fun LoginScreen_Ryan(){
 
             )
         Spacer(modifier = Modifier.height(16.dp))
+
+        //Password field
+        var readPass = dataStore.getPassword.collectAsState(initial = "").value
+        var pass by rememberSaveable { mutableStateOf("") }
+        pass = readPass!!
+        Text(
+            modifier = Modifier
+                .padding(16.dp, 0.dp)
+                .alpha(0.6f),
+            text = "PASSWORD",
+            fontWeight = FontWeight.SemiBold,
+            color = Color.Gray,
+            fontSize = 12.sp
+        )
+        TextField(
+            value = pass!!,
+            onValueChange = { pass = it },
+
+            keyboardOptions = KeyboardOptions.Default.copy(
+                keyboardType
+                = KeyboardType.Password
+            ),
+            modifier = Modifier
+                .padding(16.dp, 0.dp, 16.dp, 0.dp)
+                .fillMaxWidth(),
+
+            )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
         Button(
             onClick = {
                 //launch the class in a coroutine scope
                 scope.launch {
-                    dataStore.saveEmail(email)
+                    dataStore.saveEmail(email!!)
+                    dataStore.savePassword(pass!!)
                 }
 
             },
@@ -89,7 +122,7 @@ fun LoginScreen_Ryan(){
             Text(
                 style = MaterialTheme.typography.subtitle1,
                 color = Color.White,
-                text = "Save Email",
+                text = "Save Account",
 
                 )
         }
@@ -100,4 +133,9 @@ fun LoginScreen_Ryan(){
         Text(text = userEmail.value!!)
 
     }
+}
+@Preview
+@Composable
+fun RyanPreview(){
+    LoginScreen_Ryan()
 }
