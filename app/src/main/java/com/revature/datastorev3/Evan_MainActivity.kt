@@ -47,12 +47,34 @@ fun LoginScreen_EVAN() {
 
     Column(modifier = Modifier.wrapContentSize()) {
         var email by rememberSaveable { mutableStateOf("") }
+        var password by rememberSaveable { mutableStateOf("") }
         //
         Text(
             modifier = Modifier
                 .padding(16.dp, 0.dp)
                 .alpha(0.6f),
             text = "EMAIL",
+            fontWeight = FontWeight.SemiBold,
+            color = Color.Gray,
+            fontSize = 12.sp
+        )
+        //email field
+        TextField(
+            value = email,
+            onValueChange = { email = it },
+            keyboardOptions = KeyboardOptions.Default.copy(
+                keyboardType = KeyboardType.Email
+            ),
+            modifier = Modifier
+                .padding(16.dp, 0.dp, 16.dp, 0.dp)
+                .fillMaxWidth(),
+        )
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(
+            modifier = Modifier
+                .padding(16.dp, 0.dp)
+                .alpha(0.6f),
+            text = "PASSWORD",
             fontWeight = FontWeight.SemiBold,
             color = Color.Gray,
             fontSize = 12.sp
