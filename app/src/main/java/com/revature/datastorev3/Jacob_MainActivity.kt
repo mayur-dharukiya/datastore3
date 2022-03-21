@@ -8,7 +8,9 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import com.revature.datastorev3.ui.theme.Datastore3Theme
 
@@ -27,4 +29,13 @@ class Jacob_MainActivity : ComponentActivity() {
             }
         }
     }
+}
+@Composable
+fun LoginScreen()
+{
+    val context= LocalContext.current
+
+    val scope= rememberCoroutineScope()
+
+    val datastore=Jacob_StoreUserEmail(context)
 }
