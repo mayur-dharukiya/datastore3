@@ -19,11 +19,11 @@
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
-            android:name=".David_MainActivity"
+            android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
-            android:name=".Tyler_MainActivity"
+            android:name=".Gale_MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
@@ -71,7 +71,11 @@
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Tyler_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".David_MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Datastore3">
             <intent-filter>
