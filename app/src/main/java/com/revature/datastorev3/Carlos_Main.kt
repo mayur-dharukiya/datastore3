@@ -17,23 +17,21 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.revature.datastorev3.ui.Carlos_StoreUserEmail
 import com.revature.datastorev3.ui.theme.Datastore3Theme
 import kotlinx.coroutines.launch
 
-class Sarah_MainActivity : ComponentActivity() {
+class Carlos_Main : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent()
-        {
-            Datastore3Theme()
-            {
+        setContent {
+            Datastore3Theme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
-                )
-                {
-                    LoginScreen_SARAH()
+                ) {
+                        LoginScreen_Carlos()
                 }
             }
         }
@@ -41,14 +39,15 @@ class Sarah_MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun LoginScreen_SARAH()
-{
-    val context = LocalContext.current
-    val scope = rememberCoroutineScope()
-    val dataStore = Sarah_StoreUserEmail(context)
+fun LoginScreen_Carlos() {
 
-    Column(modifier = Modifier.wrapContentSize())
-    {
+    val context = LocalContext.current
+
+    val scope = rememberCoroutineScope()
+
+    val dataStore = Carlos_StoreUserEmail(context)
+
+    Column(modifier = Modifier.wrapContentSize()) {
         var email by rememberSaveable { mutableStateOf("") }
         //
         Text(
@@ -76,11 +75,9 @@ fun LoginScreen_SARAH()
             )
         Spacer(modifier = Modifier.height(16.dp))
         Button(
-            onClick =
-            {
+            onClick = {
                 //launch the class in a coroutine scope
-                scope.launch()
-                {
+                scope.launch {
                     dataStore.saveEmail(email)
                 }
 
@@ -89,8 +86,7 @@ fun LoginScreen_SARAH()
                 .fillMaxWidth()
                 .height(60.dp)
                 .padding(16.dp, 0.dp, 16.dp, 0.dp),
-        )
-        {
+        ) {
             Text(
                 style = MaterialTheme.typography.subtitle1,
                 color = Color.White,
@@ -104,12 +100,13 @@ fun LoginScreen_SARAH()
 
         Text(text = userEmail.value!!)
 
-    }
-}
 
-@Preview
-@Composable
-fun PreviewLoginScreen_SARAH()
-{
-    LoginScreen_SARAH()
+    }
+
+
+
+
+
+
+
 }
