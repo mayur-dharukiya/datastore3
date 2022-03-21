@@ -8,8 +8,11 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
+import com.revature.datastorev3.ui.Kevin_StoreUserEmail
 import com.revature.datastorev3.ui.theme.Datastore3Theme
 
 class Kevin_MainActivity : ComponentActivity() {
@@ -22,9 +25,21 @@ class Kevin_MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    LoginScreen_Kevin()
                 }
             }
         }
     }
+}
+@Composable
+fun LoginScreen_Kevin()
+{
+    val context= LocalContext.current
+
+    val scope= rememberCoroutineScope()
+
+    val dataStore=Kevin_StoreUserEmail(context)
+
+
+
 }
