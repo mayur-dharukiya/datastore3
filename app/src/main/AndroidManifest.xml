@@ -23,7 +23,7 @@
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
-            android:name=".Gale_MainActivity"
+            android:name=".Tyler_MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
@@ -68,10 +68,6 @@
             android:theme="@style/Theme.Datastore3" />
         <activity
             android:name=".Sarah_MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".Tyler_MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
