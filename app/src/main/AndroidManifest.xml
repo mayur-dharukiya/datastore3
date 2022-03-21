@@ -22,10 +22,11 @@
             android:name=".David_MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
-
-
         <activity
-
+            android:name=".Evan_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
             android:name=".Gale_MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
