@@ -1,8 +1,4 @@
 <resources>
     <string name="app_name">datastore3</string>
-<<<<<<< HEAD
+
     <string name="title_activity_lyle_main2">Lyle_MainActivity2</string>
-=======
-    <string name="title_activity_peter_main2">Peter_MainActivity2</string>
->>>>>>> 3792199fcc6477abca814023deba8d9b92796713
-</resources>

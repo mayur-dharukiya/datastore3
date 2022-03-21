@@ -11,9 +11,13 @@
         android:theme="@style/Theme.Datastore3">
         <activity
 
+
             android:name=".Lyle_MainActivity2"
             android:exported="false"
             android:label="@string/title_activity_lyle_main2"
+
+
+            android:name=".Evan_MainActivity"
 
         <activity
             android:name=".MainActivity"
