@@ -10,9 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Datastore3">
         <activity
-            android:name=".ui.Adama_MainActivity"
+            android:name=".Evan_MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_adama_main"
+            android:label="@string/title_activity_peter_main2"
             android:theme="@style/Theme.Datastore3" />
         <activity
             android:name=".MainActivity"
