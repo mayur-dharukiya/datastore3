@@ -14,13 +14,13 @@ class John_StoreUserEmail (private val context:Context){
 
     companion object {
 
-        private val Context.dataStoree: DataStore<Preferences> by preferencesDataStore("userDataFile")
+        private val Context.myDataStoreObject: DataStore<Preferences> by preferencesDataStore("userDataFile")
         val USER_EMAIL_KEY = stringPreferencesKey("user_email")
     }
 
     //get email value from datastore
 
-    val getEmail: Flow<String?> = context.dataStoree.data
+    val getEmail: Flow<String?> = context.myDataStoreObject.data
         .map { preferences->
 
             preferences[Mayur_StoreUserEmail.USER_EMAIL_KEY]?:"FIRSTLAST@GMAIL.COM"
@@ -30,7 +30,7 @@ class John_StoreUserEmail (private val context:Context){
 
     suspend fun saveEmail(name:String)
     {
-        context.dataStoree.edit { preferences->
+        context.myDataStoreObject.edit { preferences->
 
             preferences[Mayur_StoreUserEmail.USER_EMAIL_KEY]=name
 
