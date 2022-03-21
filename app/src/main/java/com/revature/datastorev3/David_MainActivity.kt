@@ -23,8 +23,6 @@ class David_MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
 
-
-
                 }
             }
         }
