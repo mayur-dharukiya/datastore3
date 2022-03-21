@@ -9,25 +9,62 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Datastore3">
-        <activity
-            android:name=".Tyler_MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_tyler_main"
-            android:theme="@style/Theme.Datastore3" />
+
         <activity
             android:name=".Adama_MainActivity"
             android:exported="false"
-            android:label="Adama_MainActivity"
             android:theme="@style/Theme.Datastore3" />
         <activity
-            android:name=".Sarah_MainActivity"
+            android:name=".David_MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_peter_main2"
             android:theme="@style/Theme.Datastore3" />
         <activity
             android:name=".Gale_MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_gale_main"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Jacob_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".JonathanCastanedaMain"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".JonWork_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Lyle_MainActivity2"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Mayur_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Michael_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Peter_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Richard_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Ryan_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Sarah_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
+            android:name=".Tyler_MainActivity"
+            android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
             android:name=".MainActivity"
