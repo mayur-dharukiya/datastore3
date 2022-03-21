@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Datastore3">
         <activity
-            android:name="Adama_MainActivity"
+<<<<<<< Updated upstream
+            android:name=".Evan_MainActivity"
+=======
+            android:name=".Peter_MainActivity"
+>>>>>>> Stashed changes
             android:exported="false"
-            android:label="datastre3"
+            android:label="@string/title_activity_peter_main"
             android:theme="@style/Theme.Datastore3" />
         <activity
             android:name=".MainActivity"
