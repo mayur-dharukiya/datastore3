@@ -15,6 +15,11 @@
             android:label="@string/title_activity_peter_main2"
             android:theme="@style/Theme.Datastore3" />
         <activity
+            android:name=".Gale_MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_gale_main"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
