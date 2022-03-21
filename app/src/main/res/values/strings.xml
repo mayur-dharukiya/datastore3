@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">datastore3</string>
+    <string name="title_activity_adama_main">Adama_MainActivity</string>
 </resources>
