@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">datastore3</string>
+    <string name="title_activity_peter_main2">Peter_MainActivity2</string>
 </resources>
