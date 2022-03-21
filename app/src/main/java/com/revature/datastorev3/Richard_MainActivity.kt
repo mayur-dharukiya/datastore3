@@ -1,4 +1,4 @@
-package com.revature.datastorev3.ui
+package com.revature.datastorev3
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,22 +22,9 @@ class Richard_MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    Datastore3Theme {
-        Greeting("Android")
     }
 }
