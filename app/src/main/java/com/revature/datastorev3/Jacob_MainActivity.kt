@@ -31,7 +31,7 @@ class Jacob_MainActivity : ComponentActivity() {
     }
 }
 @Composable
-fun LoginScreen()
+fun LoginScreen_Jacob()
 {
     val context= LocalContext.current
 
