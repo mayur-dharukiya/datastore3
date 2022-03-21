@@ -23,6 +23,7 @@
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
 
+
         <activity
             android:name=".Gale_MainActivity"
             android:exported="false"
@@ -43,7 +44,10 @@
             android:name=".Lyle_MainActivity2"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
-
+        <activity
+            android:name=".Mayur_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
         <activity
             android:name=".Micah_MainActivity"
             android:exported="false"
@@ -73,7 +77,7 @@
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
-            android:name=".Mayur_MainActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Datastore3">
             <intent-filter>
