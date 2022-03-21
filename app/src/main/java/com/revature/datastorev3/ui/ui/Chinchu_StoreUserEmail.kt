@@ -3,16 +3,15 @@ package com.revature.datastorev3.ui
 import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.Preferences
-import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import java.util.prefs.Preferences
 
+class Chinchu_StoreUserEmail(private val context:Context) {
 
-
-class John_StoreUserEmail (private val context:Context){
+    //to make sure we have only instance
 
     companion object {
 
@@ -40,3 +39,4 @@ class John_StoreUserEmail (private val context:Context){
         }
     }
 }
+

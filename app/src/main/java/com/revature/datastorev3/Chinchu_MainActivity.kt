@@ -17,11 +17,11 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.revature.datastorev3.ui.John_StoreUserEmail
+import com.revature.datastorev3.ui.Mayur_StoreUserEmail
 import com.revature.datastorev3.ui.theme.Datastore3Theme
 import kotlinx.coroutines.launch
 
-class John_MainActivity : ComponentActivity() {
+class Chinchu_MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -31,21 +31,20 @@ class John_MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                    LoginScreen_Chinchu()
                 }
             }
         }
     }
 }
 @Composable
-fun LoginScreen_JOHN()
+fun LoginScreen_Chinchu()
 {
+    val context= LocalContext.current
 
-    val context = LocalContext.current
+    val scope= rememberCoroutineScope()
 
-    val scope = rememberCoroutineScope()
-
-    val dataStore = John_StoreUserEmail(context)
+    val dataStore=Chinchu_StoreUserEmail(context)
 
     Column(modifier = Modifier.wrapContentSize()) {
         var email by rememberSaveable { mutableStateOf("") }
@@ -105,3 +104,4 @@ fun LoginScreen_JOHN()
 
 
 }
+
