@@ -47,6 +47,10 @@
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
         <activity
+            android:name=".Micah_MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
             android:name=".Michael_MainActivity"
             android:exported="false"
             android:theme="@style/Theme.Datastore3" />
