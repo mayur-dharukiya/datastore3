@@ -31,14 +31,14 @@ class Mayur_MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                       
+                    LoginScreen_MAYUR()
                 }
             }
         }
     }
 }
 @Composable
-fun LoginScreen()
+fun LoginScreen_MAYUR()
 {
     val context= LocalContext.current
 
