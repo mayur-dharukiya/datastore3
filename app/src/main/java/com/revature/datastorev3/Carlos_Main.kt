@@ -25,7 +25,7 @@ class Carlos_Main : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-
+                        LoginScreen_Carlos()
                 }
             }
         }
@@ -33,7 +33,7 @@ class Carlos_Main : ComponentActivity() {
 }
 
 @Composable
-fun LoginScreen() {
+fun LoginScreen_Carlos() {
 
     val context = LocalContext.current
 
