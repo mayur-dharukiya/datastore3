@@ -12,7 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.revature.datastorev3.ui.theme.Datastore3Theme
 
-class Peter_MainActivity : ComponentActivity() {
+class Jacob_MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
