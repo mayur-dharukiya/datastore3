@@ -10,59 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Datastore3">
         <activity
-<<<<<<< Updated upstream
-
-
-
-            android:name=".Lyle_MainActivity2"
+            android:name=".Tyler_MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_lyle_main2"
-
-
-            android:name=".Evan_MainActivity"
-
-
+            android:label="@string/title_activity_tyler_main"
+            android:theme="@style/Theme.Datastore3" />
+        <activity
             android:name=".Adama_MainActivity"
             android:exported="false"
             android:label="Adama_MainActivity"
-=======
-            android:name=".Adama_MainActivity"
-            android:exported="false"
-            android:label=" @string/title_activity_adama_main"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".David_MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".Evan_MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".JonathanCastanedaMain"
-            android:exported="false"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".Mayur_MainActivity"
-            android:exported="false"
-
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".Michael_MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".Peter_MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".Ryan_MainActivity"
-            android:exported="false"
-            android:theme="@style/Theme.Datastore3" />
-        <activity
-            android:name=".Sarah_MainActivity"
-            android:exported="false"
->>>>>>> Stashed changes
             android:theme="@style/Theme.Datastore3" />
         <activity
             android:name=".Sarah_MainActivity"
@@ -74,10 +29,10 @@
             android:exported="false"
             android:label="@string/title_activity_gale_main"
             android:theme="@style/Theme.Datastore3" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
+            android:label="@string/app_name"
             android:theme="@style/Theme.Datastore3">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
