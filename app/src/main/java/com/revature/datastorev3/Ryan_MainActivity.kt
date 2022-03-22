@@ -47,9 +47,9 @@ fun LoginScreen_Ryan(){
     val dataStore = Ryan_StoreUserEmail(context)
 
     Column(modifier = Modifier.wrapContentSize()) {
-        var readEmail = dataStore.getEmail.collectAsState(initial = "").value
+        var readEmail = dataStore.getEmail.collectAsState(initial = "")
         var email by rememberSaveable { mutableStateOf("") }
-        email = readEmail!!
+        //email = readEmail!!
         //
         Text(
             modifier = Modifier
@@ -64,7 +64,6 @@ fun LoginScreen_Ryan(){
         TextField(
             value = email,
             onValueChange = { email = it },
-
             keyboardOptions = KeyboardOptions.Default.copy(
                 keyboardType
                 = KeyboardType.Email
@@ -72,14 +71,15 @@ fun LoginScreen_Ryan(){
             modifier = Modifier
                 .padding(16.dp, 0.dp, 16.dp, 0.dp)
                 .fillMaxWidth(),
+            placeholder = {Text(readEmail.value!!)}
 
             )
         Spacer(modifier = Modifier.height(16.dp))
 
         //Password field
-        var readPass = dataStore.getPassword.collectAsState(initial = "").value
+        var readPass = dataStore.getPassword.collectAsState(initial = "")
         var pass by rememberSaveable { mutableStateOf("") }
-        pass = readPass!!
+
         Text(
             modifier = Modifier
                 .padding(16.dp, 0.dp)
@@ -90,7 +90,7 @@ fun LoginScreen_Ryan(){
             fontSize = 12.sp
         )
         TextField(
-            value = pass!!,
+            value = pass,
             onValueChange = { pass = it },
 
             keyboardOptions = KeyboardOptions.Default.copy(
@@ -100,6 +100,7 @@ fun LoginScreen_Ryan(){
             modifier = Modifier
                 .padding(16.dp, 0.dp, 16.dp, 0.dp)
                 .fillMaxWidth(),
+            placeholder = { Text(readPass.value!!)}
 
             )
 
